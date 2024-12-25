@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Semester Result</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>First Semester Result</h1>
+
+        <!-- Form for name and seat number -->
+        <div id="formSection">
+            <label for="name">Enter your Name:</label>
+            <input type="text" id="name" placeholder="Enter Name" required>
+
+            <label for="seatNumber">Enter your Seat Number:</label>
+            <input type="text" id="seatNumber" placeholder="Enter Seat Number" required>
+
+            <button onclick="getResult()">Check Result</button>
+        </div>
+
+        <!-- Result Section -->
+        <div id="resultSection" style="display: none;">
+            <h2>Result for <span id="studentName"></span> (Seat Number: <span id="studentSeatNumber"></span>)</h2>
+            <p id="resultMessage"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
